@@ -1,0 +1,12 @@
+19:56:11.892 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+19:56:11.899 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+19:56:12.643 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+19:56:12.693 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+19:56:17.193 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed, error message "Password is required" is found.
+19:56:17.215 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+19:59:59.595 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+19:59:59.601 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+20:00:00.263 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+20:00:00.331 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+20:00:03.839 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed, error message "Username is required" is found.
+20:00:03.864 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
