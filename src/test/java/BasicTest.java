@@ -35,6 +35,7 @@ public abstract class BasicTest {
 
     @AfterAll
     public static void afterClass(){
-        driver.quit();
+        if (driver!=null){
+        driver.quit();}
     }
 }
