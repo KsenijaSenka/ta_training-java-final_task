@@ -22,6 +22,7 @@ public class LoginTest extends BasicTest {
         String username = "standard_user";
         String password = "secret_sauce";
 
+        logger.info("Starting the login with valid credentials test for Chrome.");
         setUpChrome();
         driver.navigate().to(url);
         loginPage = new LoginPage(driver, wait);
@@ -33,6 +34,12 @@ public class LoginTest extends BasicTest {
 
         assertEquals("Swag Labs", inventoryPage.getInventoryPageTitle(),
                 "The page title should be 'Swag Labs'.");
+
+        if (inventoryPage.getInventoryPageTitle().contains("Swag Labs")) {
+            logger.info("Test passed for Chrome, the title \"Swag Labs\" is found.");
+        } else {
+            logger.error("Test failed for Chrome, the title \"Swag Labs\" is not found.");
+        }
     }
 
     @Test
@@ -40,6 +47,7 @@ public class LoginTest extends BasicTest {
         String username = "standard_user";
         String password = "secret_sauce";
 
+        logger.info("Starting the login with valid credentials test for Edge.");
         setUpEdge();
         driver.navigate().to(url);
         loginPage = new LoginPage(driver, wait);
@@ -51,6 +59,12 @@ public class LoginTest extends BasicTest {
 
         assertEquals("Swag Labs", inventoryPage.getInventoryPageTitle(),
                 "The page title should be 'Swag Labs'.");
+
+        if (inventoryPage.getInventoryPageTitle().contains("Swag Labs")) {
+            logger.info("Test passed for Edge, the title \"Swag Labs\" is found.");
+        } else {
+            logger.error("Test failed for Edge, the title \"Swag Labs\" is not found.");
+        }
     }
 
     //    @Test
@@ -72,6 +86,7 @@ public class LoginTest extends BasicTest {
         String username = "random_user";
         String password = "random";
 
+        logger.info("Starting the login with empty credentials test.");
         setUpChrome();
         driver.navigate().to(url);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -88,6 +103,11 @@ public class LoginTest extends BasicTest {
                 .until(ExpectedConditions.textToBePresentInElement(
                         loginPage.getErrorMessageElement(), "Username is required"));
 
+        if (loginPage.getErrorMessageElement().getText().contains("Username is required")) {
+            logger.info("Test passed, error message \"Username is required\" is found.");
+        } else {
+            logger.error("Test failed, error message \"Username is required\" is not found.");
+        }
     }
 
     //    assertTrue(
@@ -101,6 +121,7 @@ public class LoginTest extends BasicTest {
         String username = "random_user";
         String password = "random";
 
+        logger.info("Starting the login with empty password test.");
         setUpChrome();
         driver.navigate().to(url);
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -115,5 +136,11 @@ public class LoginTest extends BasicTest {
                 .withMessage("Error message for missing password should be present")
                 .until(ExpectedConditions.textToBePresentInElement(
                         loginPage.getErrorMessageElement(), "Password is required"));
+
+        if (loginPage.getErrorMessageElement().getText().contains("Password is required")) {
+            logger.info("Test passed, error message \"Password is required\" is found.");
+        } else {
+            logger.error("Test failed, error message \"Password is required\" is not found.");
+        }
     }
 }
