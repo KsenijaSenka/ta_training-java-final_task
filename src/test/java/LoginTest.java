@@ -1,4 +1,9 @@
+import org.junit.jupiter.api.Order;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.parallel.Execution;
+import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -7,9 +12,12 @@ import java.time.Duration;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class LoginTest extends BasicTest {
 
     @Test
+    @Tag("nonParallel")
+    @Order(3)
     public void verifySuccessfulLoginWithChrome() {
         String username = "standard_user";
         String password = "secret_sauce";
@@ -58,6 +66,8 @@ public class LoginTest extends BasicTest {
 //        loginPage.clickOnLoginButton();
 //    }
     @Test
+    @Order(1)
+    @Tag("nonParallel")
     public void verifyUnsuccessfulLoginWithEmptyCredentials() {
         String username = "random_user";
         String password = "random";
@@ -85,6 +95,8 @@ public class LoginTest extends BasicTest {
 //            "Error message for missing username should be present"
 //    );
     @Test
+    @Tag("nonParallel")
+    @Order(2)
     public void verifyUnsuccessfulLoginWithEmptyPassword() {
         String username = "random_user";
         String password = "random";
@@ -104,5 +116,4 @@ public class LoginTest extends BasicTest {
                 .until(ExpectedConditions.textToBePresentInElement(
                         loginPage.getErrorMessageElement(), "Password is required"));
     }
-
 }

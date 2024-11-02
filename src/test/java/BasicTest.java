@@ -1,5 +1,6 @@
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +14,7 @@ public abstract class BasicTest {
     protected WebDriverWait wait;
     protected LoginPage loginPage;
     protected InventoryPage inventoryPage;
-
+    //private BrowserUtils browserUtils;
     protected void setUpChrome() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -32,7 +33,10 @@ public abstract class BasicTest {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
     }
-
+@AfterEach
+public void clearCookies(){
+        driver.manage().deleteAllCookies();
+    }
     @AfterAll
     public static void afterClass(){
         if (driver!=null){
