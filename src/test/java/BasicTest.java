@@ -12,7 +12,7 @@ public abstract class BasicTest {
     protected static WebDriver driver;
     protected WebDriverWait wait;
     protected LoginPage loginPage;
-
+    protected InventoryPage inventoryPage;
 
     protected void setUpChrome() {
         WebDriverManager.chromedriver().setup();

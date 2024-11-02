@@ -20,6 +20,11 @@ public class LoginTest extends BasicTest {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickOnLoginButton();
+
+        inventoryPage = new InventoryPage(driver, wait);
+
+        assertEquals("Swag Labs", inventoryPage.getInventoryPageTitle(),
+                "The page title should be 'Swag Labs'.");
     }
 
     @Test
@@ -33,6 +38,11 @@ public class LoginTest extends BasicTest {
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
         loginPage.clickOnLoginButton();
+
+        inventoryPage = new InventoryPage(driver, wait);
+
+        assertEquals("Swag Labs", inventoryPage.getInventoryPageTitle(),
+                "The page title should be 'Swag Labs'.");
     }
 
     //    @Test
@@ -94,4 +104,5 @@ public class LoginTest extends BasicTest {
                 .until(ExpectedConditions.textToBePresentInElement(
                         loginPage.getErrorMessageElement(), "Password is required"));
     }
+
 }
