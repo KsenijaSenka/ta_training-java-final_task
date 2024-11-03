@@ -1,7 +1,6 @@
 import enums.BrowserType;
 import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Tag;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -62,8 +61,8 @@ public class LoginTest extends BasicTest {
         loginPage = new LoginPage(driver, wait);
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
-        loginPage.clearUsernameInput(loginPage.getUsernameInput());
-        loginPage.clearPasswordInput(loginPage.getPasswordInput());
+        loginPage.clearUsernameInput(browserType);
+        loginPage.clearPasswordInput(browserType);
 
         loginPage.clickOnLoginButton();
 
@@ -95,7 +94,7 @@ public class LoginTest extends BasicTest {
         loginPage = new LoginPage(driver, wait);
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
-        loginPage.clearPasswordInput(loginPage.getPasswordInput());
+        loginPage.clearPasswordInput(browserType);
 
         loginPage.clickOnLoginButton();
 

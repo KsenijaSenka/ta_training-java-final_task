@@ -1,6 +1,10 @@
 package pages;
 
-import org.openqa.selenium.*;
+import enums.BrowserType;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -46,23 +50,23 @@ import java.time.Duration;
             return driver.findElement(By.xpath("//*[@id='login_button_container']"));
         }
 
-        public void clearUsernameInput(WebElement username) {
-//        Actions actions=new Actions(driver);
-//        //actions.doubleClick(username).sendKeys(username, "").perform();
-//actions.moveToElement(username)
-//        .click()
-//        .sendKeys(Keys.CLEAR)
-//        .perform();
-//        JavascriptExecutor jsExecutor  = (JavascriptExecutor) driver;
-//        jsExecutor.executeScript("arguments[0].value = '';", username);
-            username.sendKeys("\b\b\b\b\b\b\b\b\b\b\b");
+        public void clearUsernameInput(BrowserType browserType) {
 
-//        getUsernameInput().click();
-//
-//    getUsernameInput().clear();
+            switch (browserType) {
+                case CHROME, EDGE:
+                    getUsernameInput().click();
+                    getUsernameInput().sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.BACK_SPACE);
+                    break;
+                case FIREFOX:
+                    getUsernameInput().clear();
+                    getUsernameInput().sendKeys(Keys.ENTER);
+                    break;
+
+            }
         }
 
-        public void clearPasswordInput(WebElement password) {
+
+        public void clearPasswordInput( BrowserType browserType) {
 //        Actions actions=new Actions(driver);
 //        //actions.doubleClick(password).sendKeys(password, "").perform();
 //        actions.moveToElement(password)
@@ -73,9 +77,18 @@ import java.time.Duration;
 //        JavascriptExecutor jsExecutor  = (JavascriptExecutor) driver;
 //        jsExecutor.executeScript("arguments[0].value = '';", password);
 
-            password.sendKeys("\b\b\b\b\b\b\b\b\b\b\b");
+            //password.sendKeys("\b\b\b\b\b\b\b\b\b\b\b");
 //        getPasswordInput().click();
-//        getPasswordInput().clear();
+            switch (browserType) {
+                case CHROME, EDGE:
+                    getPasswordInput().click();
+                    getPasswordInput().sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.BACK_SPACE);
+                    break;
+                case FIREFOX:
+                    getPasswordInput().clear();
+                    getPasswordInput().sendKeys(Keys.ENTER);
+                    break;
+
+            }
         }
     }
-

@@ -1,3 +1,4 @@
+import enums.BrowserType;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -5,12 +6,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import pages.*;
-import enums.*;
+import pages.InventoryPage;
+import pages.LoginPage;
 
 
 public abstract class BasicTest {
@@ -23,7 +23,7 @@ public abstract class BasicTest {
     protected static final Logger logger = LoggerFactory.getLogger(BasicTest.class);
 
     protected void setUpDriver(BrowserType browserType) {
-        FirefoxOptions options = new FirefoxOptions();
+        //FirefoxOptions options = new FirefoxOptions();
         switch (browserType) {
             case CHROME:
                 logger.info("Setting up the ChromeDriver for the tests.");
