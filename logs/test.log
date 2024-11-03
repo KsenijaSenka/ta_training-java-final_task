@@ -106,3 +106,164 @@
 13:29:00.767 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
 13:29:01.213 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
 13:29:01.474 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+14:10:20.239 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+14:10:21.713 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+14:10:21.753 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+14:10:23.176 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+14:10:24.734 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Username is required" is found.
+14:10:24.801 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+14:10:25.338 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+14:10:25.382 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+14:10:28.203 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+14:10:30.193 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Username is required" is found.
+14:10:30.214 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+14:10:32.123 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+14:10:32.880 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+14:10:34.041 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+14:10:34.174 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+14:10:34.317 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+14:10:36.454 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:10:38.367 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, the title "Swag Labs" is found.
+14:10:38.417 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+14:10:38.454 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+14:10:38.576 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+14:10:41.407 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:10:44.331 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, the title "Swag Labs" is found.
+14:10:44.374 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+14:10:47.982 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+14:10:49.207 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+14:10:49.961 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+14:10:49.983 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+14:10:50.149 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+14:10:52.184 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+14:10:55.570 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Password is required" is found.
+14:10:55.587 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+14:10:55.610 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+14:10:55.684 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+14:10:59.098 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+14:11:02.921 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Password is required" is found.
+14:11:02.955 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+14:11:07.175 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Reading https://raw.githubusercontent.com/bonigarcia/webdrivermanager/master/docs/mirror/geckodriver to seek geckodriver
+14:11:08.594 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+14:11:08.997 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+14:24:43.525 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+14:24:44.226 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+14:24:44.310 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+14:24:46.312 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:24:47.832 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, the title "Swag Labs" is found.
+14:24:47.891 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+14:24:47.924 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+14:24:47.987 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+14:24:51.403 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:24:53.118 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, the title "Swag Labs" is found.
+14:24:53.167 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+14:24:53.515 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+14:28:18.809 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+14:28:19.451 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+14:28:19.505 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+14:28:21.642 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:28:22.811 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, the title "Swag Labs" is found.
+14:28:22.858 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+14:28:22.883 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+14:28:22.933 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+14:28:26.197 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+14:28:27.932 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, the title "Swag Labs" is found.
+14:28:27.963 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+14:28:28.610 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+15:14:13.378 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:14:15.026 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:14:15.093 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:14:16.999 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:14:18.647 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Password is required" is found.
+15:14:18.686 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:14:19.223 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:14:19.255 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:14:22.240 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:14:23.983 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Password is required" is found.
+15:14:24.002 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:14:28.484 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:14:41.323 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+15:16:47.308 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:16:47.939 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:16:48.001 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:16:49.575 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:16:51.424 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Username is required" is found.
+15:16:51.453 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:16:51.469 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:16:51.513 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:16:54.505 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:16:56.316 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Username is required" is found.
+15:16:56.334 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:17:01.466 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:17:14.327 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:17:14.370 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:17:14.548 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:17:15.919 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:17:17.370 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, the title "Swag Labs" is found.
+15:17:17.401 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:17:17.439 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:17:17.536 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:17:20.519 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:17:22.398 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, the title "Swag Labs" is found.
+15:17:22.428 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:17:27.094 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:17:29.515 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for FIREFOX, the title "Swag Labs" is found.
+15:17:29.539 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:17:29.579 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:17:29.688 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:17:31.179 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:17:34.977 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Password is required" is found.
+15:17:35.009 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:17:35.137 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:17:35.500 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:17:39.524 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:17:43.041 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Password is required" is found.
+15:17:43.074 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:17:49.088 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:18:01.486 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+15:19:30.753 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:19:31.514 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:19:31.582 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:19:33.750 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:19:35.365 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Password is required" is found.
+15:19:35.394 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:19:35.411 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:19:35.438 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:19:38.690 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:19:40.730 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Password is required" is found.
+15:19:40.752 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:19:44.006 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 132)
+15:19:44.180 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+15:19:49.189 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty password test.
+15:20:01.653 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+15:20:24.109 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:20:24.832 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:20:24.893 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:20:27.071 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:20:28.639 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, error message "Username is required" is found.
+15:20:28.674 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:20:28.691 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:20:28.722 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:20:31.660 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:20:33.822 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, error message "Username is required" is found.
+15:20:33.854 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:20:33.939 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 132)
+15:20:33.989 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+15:20:39.061 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with empty credentials test.
+15:20:52.142 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
+15:22:26.804 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the ChromeDriver for the tests.
+15:22:27.572 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using chromedriver 130.0.6723.91 (resolved driver for Chrome 130)
+15:22:27.635 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\kseni\.cache\selenium\chromedriver\win64\130.0.6723.91\chromedriver.exe
+15:22:29.955 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:22:31.537 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for CHROME, the title "Swag Labs" is found.
+15:22:31.622 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the EdgeDriver for the tests.
+15:22:31.648 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using msedgedriver 130.0.2849.68 (resolved driver for Edge 130)
+15:22:31.708 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\kseni\.cache\selenium\msedgedriver\win64\130.0.2849.68\msedgedriver.exe
+15:22:35.098 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:22:36.968 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for EDGE, the title "Swag Labs" is found.
+15:22:37.010 INFO  [ForkJoinPool-1-worker-1] BasicTest - Setting up the FirefoxDriver for the tests.
+15:22:37.071 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Using geckodriver 0.35.0 (resolved driver for Firefox 132)
+15:22:37.218 INFO  [ForkJoinPool-1-worker-1] i.g.bonigarcia.wdm.WebDriverManager - Exporting webdriver.gecko.driver as C:\Users\kseni\.cache\selenium\geckodriver\win64\0.35.0\geckodriver.exe
+15:22:42.841 INFO  [ForkJoinPool-1-worker-1] BasicTest - Starting the login with valid credentials test for Chrome.
+15:22:45.235 INFO  [ForkJoinPool-1-worker-1] BasicTest - Test passed for FIREFOX, the title "Swag Labs" is found.
+15:22:45.256 INFO  [ForkJoinPool-1-worker-1] BasicTest - Closing the WebDriver.
