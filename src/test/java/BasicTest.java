@@ -47,8 +47,9 @@ public abstract class BasicTest {
     }
     @AfterEach
     public void clearCookies() {
+        if (driver != null) {
         driver.manage().deleteAllCookies();
-    }
+    }}
 
     @AfterAll
     public static void afterClass() {

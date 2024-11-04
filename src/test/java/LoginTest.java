@@ -1,14 +1,14 @@
 import enums.BrowserType;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Order;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ArgumentsSource;
 import org.junit.jupiter.params.provider.EnumSource;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.InventoryPage;
 import pages.LoginPage;
+import utils.CsvAndEnumProvider;
 
 import java.time.Duration;
 
@@ -82,13 +82,11 @@ public class LoginTest extends BasicTest {
 
     @DisplayName("UC-3: Test Login form with credentials by passing Username & Password")
     @ParameterizedTest
-    @EnumSource(BrowserType.class)
-    public void verifySuccessfulLogin(BrowserType browserType) {
+    @ArgumentsSource(CsvAndEnumProvider.class)
+    public void verifySuccessfulLogin(String username, String password, BrowserType browserType) {
         setUpDriver(browserType);
-        String username = "standard_user";
-        String password = "secret_sauce";
 
-        logger.info("Starting the login with valid credentials test for Chrome.");
+        logger.info("Starting the login test for " + browserType + " with username: " + username);
 
         driver.navigate().to(url);
         loginPage = new LoginPage(driver, wait);

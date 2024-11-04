@@ -10,6 +10,6 @@ public abstract class BasicPage {
 
     public BasicPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
-        this.wait = wait;;
+        this.wait = wait;
     }
 }

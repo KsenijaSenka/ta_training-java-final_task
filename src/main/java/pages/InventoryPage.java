@@ -8,6 +8,7 @@ public class InventoryPage extends BasicPage {
     public InventoryPage(WebDriver driver, WebDriverWait wait) {
         super(driver, wait);
     }
+
     public String getInventoryPageTitle() {
         return driver.getTitle();
     }
