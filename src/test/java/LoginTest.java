@@ -20,8 +20,6 @@ public class LoginTest extends BasicTest {
     @DisplayName("UC-1: Verify Unsuccessful Login with Empty Credentials")
     @ParameterizedTest
     @EnumSource(BrowserType.class)
-    @Order(1)
-    @Tag("nonParallel")
     public void verifyUnsuccessfulLoginWithEmptyCredentials(BrowserType browserType) {
         setUpDriver(browserType);
         String username = "random_user";
@@ -54,8 +52,6 @@ public class LoginTest extends BasicTest {
     @DisplayName("UC-2: Verify Unsuccessful Login with Empty Password")
     @ParameterizedTest
     @EnumSource(BrowserType.class)
-    @Tag("nonParallel")
-    @Order(2)
     public void verifyUnsuccessfulLoginWithEmptyPassword(BrowserType browserType) {
         setUpDriver(browserType);
         String username = "random_user";

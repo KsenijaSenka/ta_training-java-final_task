@@ -23,7 +23,7 @@ public abstract class BasicTest {
     protected static final Logger logger = LoggerFactory.getLogger(BasicTest.class);
 
     protected void setUpDriver(BrowserType browserType) {
-        //FirefoxOptions options = new FirefoxOptions();
+
         switch (browserType) {
             case CHROME:
                 logger.info("Setting up the ChromeDriver for the tests.");
@@ -33,8 +33,6 @@ public abstract class BasicTest {
             case FIREFOX:
                 logger.info("Setting up the FirefoxDriver for the tests.");
                 WebDriverManager.firefoxdriver().setup();
-                //System.setProperty("webdriver.gecko.driver", "C:\\Drivers\\geckodriver.exe");
-                //options.setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
                 driver = new FirefoxDriver();
                 break;
             case EDGE:
