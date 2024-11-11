@@ -105,7 +105,7 @@ public class BrowserSpecificLoginTest extends BrowserSpecificBasicTest{
     @DisplayName("UC-2: Verify Unsuccessful Login with Empty Password - Chrome")
     @Test
     public void verifyUnsuccessfulLoginWithEmptyPasswordChrome() {
-        setUpDriver("CHROME");  // Set Firefox for this test
+        setUpDriver("CHROME");
         String username = "random_user";
         String password = "random";
 
@@ -133,7 +133,7 @@ public class BrowserSpecificLoginTest extends BrowserSpecificBasicTest{
     @DisplayName("UC-2: Verify Unsuccessful Login with Empty Password - Edge")
     @Test
     public void verifyUnsuccessfulLoginWithEmptyPasswordEdge() {
-        setUpDriver("EDGE");  // Set Firefox for this test
+        setUpDriver("EDGE");
         String username = "random_user";
         String password = "random";
 
@@ -161,7 +161,7 @@ public class BrowserSpecificLoginTest extends BrowserSpecificBasicTest{
     @DisplayName("UC-2: Verify Unsuccessful Login with Empty Password - Firefox")
     @Test
     public void verifyUnsuccessfulLoginWithEmptyPasswordFirefox() {
-        setUpDriver("FIREFOX");  // Set Firefox for this test
+        setUpDriver("FIREFOX");
         String username = "random_user";
         String password = "random";
 
@@ -172,7 +172,7 @@ public class BrowserSpecificLoginTest extends BrowserSpecificBasicTest{
         loginPage = new LoginPage(driver, wait);
         loginPage.enterUsername(username);
         loginPage.enterPassword(password);
-        loginPage.clearPasswordInput(BrowserType.FIREFOX);  // Using the corresponding browser type
+        loginPage.clearPasswordInput(BrowserType.FIREFOX);
 
         loginPage.clickOnLoginButton();
 
