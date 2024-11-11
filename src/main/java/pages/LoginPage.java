@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -15,24 +16,55 @@ public class LoginPage extends BasicPage {
         super(driver, new WebDriverWait(driver, Duration.ofSeconds(10)));
     }
 
-    public WebElement getLoginButton() {
-        return driver.findElement(By.xpath("//input[@id=\"login-button\"]"));
-    }
+    @FindBy(xpath = "//input[@id='login-button']")
+    private WebElement loginButton;
 
+    @FindBy(xpath = "//input[@id='user-name']")
+    private WebElement usernameInput;
+
+    @FindBy(xpath = "//input[@id='password']")
+    private WebElement passwordInput;
+//    public WebElement getLoginButton() {
+//        return driver.findElement(By.xpath("//input[@id=\"login-button\"]"));
+//    }
+//
+//    public WebElement getUsernameInput() {
+//        return driver.findElement(By.xpath("//input[@id=\"user-name\"]"));
+//    }
+//
+//    public WebElement getPasswordInput() {
+//        return driver.findElement(By.xpath("//input[@id=\"password\"]"));
+//    }
+
+    //    public void enterUsername(String username) {
+//        getUsernameInput().sendKeys(username);
+//    }
+//
+//    public void enterPassword(String password) {
+//        getPasswordInput().sendKeys(password);
+//    }
     public WebElement getUsernameInput() {
-        return driver.findElement(By.xpath("//input[@id=\"user-name\"]"));
+        return usernameInput;
     }
 
     public WebElement getPasswordInput() {
-        return driver.findElement(By.xpath("//input[@id=\"password\"]"));
+        return passwordInput;
     }
 
+    @FindBy(xpath = "//*[@id='login_button_container']")
+    private WebElement errorMessageElement;
+
+    // Methods to perform actions on elements
     public void enterUsername(String username) {
         getUsernameInput().sendKeys(username);
     }
 
     public void enterPassword(String password) {
         getPasswordInput().sendKeys(password);
+    }
+
+    public WebElement getLoginButton() {
+        return loginButton;
     }
 
     public void clickOnLoginButton() {
@@ -42,8 +74,11 @@ public class LoginPage extends BasicPage {
     }
 
     public WebElement getErrorMessageElement() {
-        return driver.findElement(By.xpath("//*[@id='login_button_container']"));
+        return errorMessageElement;
     }
+//    public WebElement getErrorMessageElement() {
+//        return driver.findElement(By.xpath("//*[@id='login_button_container']"));
+//    }
 
     public void clearUsernameInput(BrowserType browserType) {
 

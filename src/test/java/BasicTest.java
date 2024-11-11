@@ -45,17 +45,22 @@ public abstract class BasicTest {
         }
         driver.manage().window().maximize();
     }
+
     @AfterEach
     public void clearCookies() {
         if (driver != null) {
-        driver.manage().deleteAllCookies();
-    }}
-
-    @AfterAll
-    public static void afterClass() {
-        if (driver != null) {
-            logger.info("Closing the WebDriver.");
-            driver.quit();
+            driver.manage().deleteAllCookies();
+            logger.info("Closing the current browser window.");
+            driver.close();
         }
     }
+
+//   @AfterAll
+//    public static void afterClass() {
+//        if (driver != null) {
+//            logger.info("Terminating the WebDriver session.");
+//            driver.quit();
+//            driver = null;
+//       }
+//    }
 }
